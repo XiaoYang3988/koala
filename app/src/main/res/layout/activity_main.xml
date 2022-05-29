@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <EditText
+        android:id="@+id/txtOne"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:height="400dp"
+        android:textColor="#ffffff"
+        android:focusable="false"
+        android:background="@drawable/textview_border"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOne"
+        android:layout_alignParentLeft="true"
+        android:text="/data/local/tmp/tcpdump --help" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter"
+        android:layout_alignParentRight="true"
+        android:text="stop" />
+
+</RelativeLayout>
